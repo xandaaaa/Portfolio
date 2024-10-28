@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px)   {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
+    /* top bar */
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    /* introtext */
+
+    .introductionunderwelcome {
+        text-align: center;
+    }
+    
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh; 
+        background-color: #003366;
+        position: relative;
+    }
+    
+    .section__intro {
+        text-align: center;
+        position: relative;
+    }
+    
+    .introduction {
+        display: flex;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .introunderintro {
+        margin: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    /* boxes */
+
+    #experience {
+        background-color: white;
+    }
+
+    .two-column-box {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;  
+        border: none; 
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .column {
+        background-color: rgba(236, 236, 236, 0.898);
+        border-radius: 10px;
+    }
+
+    .column-left, .column-right {
+        border: none;
+    }
+
+    .toolsleftbox {
+        margin-top: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .listskills, .listlang {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* projects */
+    
+    #projects {
+        margin-top: 500px;
+        background-color: white;
+    }
+
+    .projecttemp {
+        top: 50px;
+    }
+
+    #contact {
+        background-color: white;
+        margin-top: 1000px;
+    }
+
+    .footer1 {
+        background-color: white;
+    }
+}
+
+

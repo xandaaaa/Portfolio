@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xander Yap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Xander Yap</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" class="about-link">About</a></li>
+          <li><a href="#experience" class="experience-link">Experience</a></li>
+          <li><a href="#projects" class="projects-link">Projects</a></li>
+          <li><a href="#contact" class="contact-link">Contact</a></li>
+          <li><img src="assets/xlogo.jpg" alt="404", class="logo-image"></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Xander Yap</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="welcome">
+        <div class="section__text">
+            <h1 class="welcometext">Welcome</h1>
+        </div>
+        <div class="introductionunderwelcome">This is my personal website, feel free to explore and find out more about me!</div>
+    </section>
+    <section id="about">
+        <div class="section__intro">
+            <h1 class="introduction">Hey! It's me Xander - ETH Zürich</h1>
+            <p class="introunderintro">I am currently pursuing my bachelor's degree in Information Technology and Electrical Engineering at ETH Zürich. <br>
+                Throughout my time at University, I have build a strong foundation in theoretical concepts and  gained valuable <br>
+                hands-on experience. My interests primarly lie in FPGA Engineering, Software Engineering and Machine Learning, <br>
+                fields in which I am eager to deepen my experience and enhance my skills. I am a motivated problem solver who <br>
+                enjoys working on challenging projects and collaborating with others to develop innovative solutions.
+            </p>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="two-column-box">
+            <div class="column column-left">
+                <p class="interestsclass">Technical Skills</p>
+                <p class="interestsdesc">I have a solid understanding of fundamental machine learning algorithms and have gained hands-on experience working with various FPGA platforms.</p>
+                <p class="toolsleftbox">Tools:</p>
+                <ul class="listskills">
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>Verilog/Systemverilog</li>
+                    <li>HTML/CSS</li>
+                    <li>Git</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="column column-right">
+                <p class="compskills">Complementary Skills</p>
+                <p class="compdesc">Strong will to learn and improve my skills, backed by a multilingual background. Aiming to leverage my knowledge for positive contributions.</p>
+                <p class="languages">Languages:</p>
+                <ul class="listlang">
+                    <li>English</li>
+                    <li>German</li>
+                    <li>Chinese</li>
+                </ul>
+                <button class="btn btncv" onclick="window.open('./assets/resumeupdated1.pdf')">Download CV</button>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section__projects">
+            <h1 class="titleproject">Projects</h1>
+            <div class="container">
+              <div class="containercolor">
+                <div class="imgcontainer">
+                  <img src="assets/project1placeholder.png" alt="404" class="project-img">
+                </div>
+                <h2 class="projecttitle">Project 1</h2>
+                <div class="btn-container">
+                  <button class="btn btn-colorproject" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+              </div>
+              <div class="containercolor">
+                <div class="imgcontainer">
+                  <img src="assets/project1placeholder.png" alt="404" class="project-img">
+                </div>
+                <h2 class="projecttitle">Project 2</h2>
+                <div class="btn-container">
+                  <button class="btn btn-colorproject" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+              </div>
+              <div class="containercolor">
+                <div class="imgcontainer">
+                  <img src="assets/project1placeholder.png" alt="404" class="project-img">
+                </div>
+                <h2 class="projecttitle">Project 3</h2>
+                <div class="btn-container">
+                  <button class="btn btn-colorproject" onclick="location.href='https://github.com/'">Github</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+      <div class="contactinfo">
+          <h1 class="textcontact">contacts</h1>
+          <div class="border-line"></div>
+          <div class="contact-details">
+              <div class="email-info">
+                  <img src="assets/email.png" alt="Email Icon" class="iconcontact">
+                  <p class="emailtext">
+                      <a href="mailto:xanderyap1111@gmail.com">Xanderyap1111@gmail.com</a>
+                  </p>
+              </div>
+              <div class="linkedin-info"> 
+                  <img src="assets/linkedin.png" alt="LinkedIn Icon" class="iconcontact1">
+                  <p class="linkedintext">
+                      <a href="https://www.linkedin.com/in/xander-yap-b71734301/" target="_blank">LinkedIn</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="navigation">
+          <nav>
+              <ul class="nav-bottom">
+                  <li><a href="#about" class="about-link">About</a></li>
+                  <li><a href="#experience" class="experience-link">Experience</a></li>
+                  <li><a href="#projects" class="projects-link">Projects</a></li>
+                  <li><a href="#contact" class="contact-link">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </section>
+  <footer class="footer1">
+    <p class="copyright">&#169 Created by: Xander Yap.</p>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
