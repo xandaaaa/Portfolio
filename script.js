@@ -113,9 +113,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "This is my personal webpage, feel free to explore and find out more about me!";
+    const text = "Welcome";
     let index = 0;
-    const speed = 100; 
+    const speed = 150; 
     const deleteSpeed = 50; 
     const element = document.getElementById("typingText");
 

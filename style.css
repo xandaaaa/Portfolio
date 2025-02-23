@@ -230,6 +230,7 @@ section {
   opacity: 0;
   transform: translateY(10px); 
   animation: fadeInUp 1.5s ease-out forwards;
+
 }
 
 @keyframes fadeInUp {
@@ -248,7 +249,6 @@ section {
   color: rgb(169, 165, 165);
   margin-top: 20px;
   z-index: 1;
-  text-decoration: underline;
 }
 
 /* start about section */
