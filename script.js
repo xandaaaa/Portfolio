@@ -111,3 +111,34 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const text = "Welcome";
+    let index = 0;
+    const speed = 200; 
+    const deleteSpeed = 50; 
+    const element = document.getElementById("typingWelcome");
+
+    function type() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        } else {
+            setTimeout(deleteText, 1000); 
+        }
+    }
+
+    function deleteText() {
+        let currentText = element.innerHTML;
+        if (currentText.length > 0) {
+            element.innerHTML = currentText.substring(0, currentText.length - 1);
+            setTimeout(deleteText, deleteSpeed);
+        } else {
+            index = 0; 
+            setTimeout(type, 500); 
+        }
+    }
+
+    type();
+});
