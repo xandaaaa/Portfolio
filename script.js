@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const text = "Welcome";
     let index = 0;
-    const speed = 150; 
+    const speed = 200; 
     const deleteSpeed = 50; 
     const element = document.getElementById("typingText");
 

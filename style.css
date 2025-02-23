@@ -227,10 +227,6 @@ section {
   margin: 0;
   color: white;
   font-size: 2rem;
-  opacity: 0;
-  transform: translateY(10px); 
-  animation: fadeInUp 1.5s ease-out forwards;
-
 }
 
 @keyframes fadeInUp {
