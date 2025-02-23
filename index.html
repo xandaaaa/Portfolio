@@ -39,20 +39,24 @@
     </nav>
     <section id="welcome">
         <div class="section__text">
-            <h1 class="welcometext" id="typingText"></h1>
+            <h1 class="welcometext" id="typingWelcome"></h1>
         </div>
         <div class="introductionunderwelcome">This is my personal webpage, feel free to explore and find out more about me!</div>
     </section>
     <section id="about">
-        <div class="section__intro">
-            <h1 class="introduction">Nice to meet you, I'm Xander!</h1>
-            <p class="introunderintro">I am currently pursuing my bachelor's degree in Information Technology and Electrical Engineering at ETH Zürich. <br>
-                Throughout my time at University, I have build a strong foundation in theoretical concepts and  gained valuable <br>
-                hands-on experience. My interests primarly lie in Machine Learning, FPGA Engineering and Semiconductor Physics, <br>
-                fields in which I am eager to deepen my experience and enhance my skills. I am a motivated problem solver who <br>
-                enjoys working on challenging projects and collaborating with others to develop innovative solutions.
-            </p>
-        </div>
+      <div class="about-container">
+          <img src="assets/Profilbild-round.png" alt="Xander Yap" class="profile-pic">
+          <div class="section__intro">
+              <h1 class="introduction">Nice to meet you, I'm Xander!</h1>
+              <p class="introunderintro">
+                  I am currently pursuing my bachelor's degree in Information Technology and Electrical Engineering at ETH Zürich. <br>
+                  Throughout my time at university, I have built a strong foundation in theoretical concepts and gained valuable <br>
+                  hands-on experience. My interests primarily lie in Machine Learning, FPGA Engineering, and Semiconductor Physics, <br>
+                  fields in which I am eager to deepen my experience and enhance my skills. I am a motivated problem solver who <br>
+                  enjoys working on challenging projects and collaborating with others to develop innovative solutions.
+              </p>
+          </div>
+      </div>
     </section>
     <section id="experience">
         <div class="two-column-box">
@@ -125,7 +129,7 @@
               <div class="email-info">
                   <img src="assets/email.png" alt="Email Icon" class="iconcontact">
                   <p class="emailtext">
-                      <a href="mailto:xanderyap1111@gmail.com">Xanderyap1111@gmail.com</a>
+                      <a href="mailto:xanyap@student.ethz.ch">xanyap@student.ethz.ch</a>
                   </p>
               </div>
               <div class="linkedin-info"> 
@@ -157,7 +161,7 @@
           let index = 0;
           const speed = 200; 
           const deleteSpeed = 50; 
-          const element = document.getElementById("typingText");
+          const element = document.getElementById("typingWelcome");
       
           function type() {
               if (index < text.length) {
