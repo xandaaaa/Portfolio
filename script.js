@@ -15,53 +15,43 @@ window.onscroll = function() {
   }
 };
 
-document.querySelector('.experience-link').addEventListener('click', function (e) {
-    e.preventDefault(); 
-
-    const target = document.querySelector(this.getAttribute('href')); 
-    const offset = 300; 
-
-    window.scrollTo({
-        top: target.offsetTop - offset,
-        behavior: 'smooth' 
+document.querySelectorAll('.about-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        scrollToSection(this, 80);
     });
 });
 
-document.querySelector('.about-link').addEventListener('click', function (e) {
-    e.preventDefault(); 
-
-    const target = document.querySelector(this.getAttribute('href')); 
-    const offset = 80; 
-
-    window.scrollTo({
-        top: target.offsetTop - offset,
-        behavior: 'smooth' 
+document.querySelectorAll('.experience-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        scrollToSection(this, 150);
     });
 });
 
-document.querySelector('.projects-link').addEventListener('click', function (e) {
-  e.preventDefault(); 
-
-  const target = document.querySelector(this.getAttribute('href')); 
-  const offset = 120; 
-
-  window.scrollTo({
-      top: target.offsetTop - offset,
-      behavior: 'smooth' 
-  });
+document.querySelectorAll('.projects-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        scrollToSection(this, 120);
+    });
 });
 
-document.querySelector('.contact-link').addEventListener('click', function (e) {
-  e.preventDefault(); 
-
-  const target = document.querySelector(this.getAttribute('href')); 
-  const offset = 120; 
-
-  window.scrollTo({
-      top: target.offsetTop - offset,
-      behavior: 'smooth' 
-  });
+document.querySelectorAll('.contact-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        scrollToSection(this, 120);
+    });
 });
+
+function scrollToSection(link, offset) {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+        window.scrollTo({
+            top: target.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const text = "Welcome";

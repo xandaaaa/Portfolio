@@ -134,21 +134,29 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0%;
-  background-color: transparent;
+  background-color: #003366;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 12px 20px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.menu-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
 }
 
 .menu-links li {
@@ -180,7 +188,6 @@ a:hover {
 }
 
 /* first section wallpaper, welcome */
-
 
 section {
   padding: 0;
@@ -308,7 +315,7 @@ section {
 }
 
 .detail {
-  font-size: 1rem;
+  font-size: 16px;
   margin: 5px 0;
   display: flex;
   align-items: center; 
@@ -324,107 +331,39 @@ section {
 
 #experience {
   background-color: rgba(236, 236, 236, 0.898);
-  display: flex;
-  height: 60vh;
-}
-
-.two-column-box {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  height: 50vh;
-  margin: -100px auto 0;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  gap: 20px; 
-  z-index: 1; 
+  padding: 30px 20px;
+  margin: 0 auto;
   position: relative;
 }
 
-.column {
-  flex: 1;
-  padding: 20px;
+.box {
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -80px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003366;
   text-align: center;
+  margin-top: 20px;
 }
 
-.column-left {
-  background-color: white; 
-  border-right: 3px solid rgba(0, 0, 0, 0.1);
-}
-
-.column-right {
-  background-color: white; 
-  border-left: 3px solid white;
-}
-
-.interestsclass {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 25px;
-  color: #003366;
-}
-
-.interestsdesc {
-  font-size: 1.15rem;
+.experiencedesc {
   color: black;
-  margin-right: 25px;
-  margin-top: 30px;
-}
-
-.toolsleftbox {
-  font-size: 1.15rem;
-  color: #003366;
-  margin-top: 50px;
-  margin-right: 25px;
-  font-weight: bold;
-}
-
-.listskills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  list-style-type: none;
-  margin-top: 30px;
-  margin-right: 25px;
-  padding: 0;
-}
-
-.listskills li {
-  font-size: 1rem;
-  padding: 5px 0;
-}
-
-.compskills {
-  font-size: 1.5rem;
-  color: #003366;
-  font-weight: bold;
-}
-
-.compdesc {
-  font-size: 1.15rem;
-  color: black;
-  margin-right: 25px;
-  margin-top: 30px;
-}
-
-.languages {
-  font-size: 1.15rem;
-  color: #003366;
-  margin-top: 50px;
-  font-weight: bold;
-}
-
-.listlang {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  list-style-type: none;
-  margin-top: 30px;
-  padding: 0;
+  margin-top: 15px;
+  max-width: 800px;
+  text-align: center;
 }
 
 .btn {
@@ -434,19 +373,127 @@ section {
   width: 8rem;
   border-radius: 2rem;
   margin-top: 30px;
-  cursor: auto;
+  cursor: pointer;
 }
 
 .btncv {
-  border: rgb(53,53,53) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   background-color: white;
   color: #003366;
 }
 
 .btncv:hover {
-  cursor: pointer;
   background: #003366;
   color: white;
+}
+
+/* Timeline */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.timeline {
+  width: 45%;
+  position: relative;
+  padding-left: 25px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px; 
+  top: 70px;
+  width: 3px;
+  height: 75%;
+  background-color: #003366;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-item {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -44px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  background-color: #003366;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-description p {
+  font-size: 0.9rem; 
+  color: black;
+  margin-top: 8px; 
+  line-height: 1.4; 
+}
+
+.timeline-description h4 {
+  font-size: 1.1rem; 
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 6px; 
+}
+
+.timeline-content h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: black;
+  margin: 5px 0;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: gray;
+  display: block;
+  margin-top: 5px;
+}
+
+.timeline-institute {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+.timeline-institute a {
+  color: #003366;
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+.timeline-institute a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px; 
 }
 
 /* start projects */

@@ -56,49 +56,92 @@
       }
     
       .detail {
-        font-size: 1rem; 
+        font-size: 1rem;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
       }
-    
+      
       .arrow {
-        font-size: 1rem; 
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     
     /* boxes */
 
     #experience {
-        background-color: white;
-    }
-
-    .two-column-box {
-        flex-direction: column;
-        width: 90%;
-        margin: 20px auto;  
-        border: none; 
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-    .column {
-        background-color: rgba(236, 236, 236, 0.898);
-        border-radius: 10px;
-    }
-
-    .column-left, .column-right {
-        border: none;
-    }
-
-    .toolsleftbox {
-        margin-top: 20px;
-    }
-
-    .btn {
+        padding: 20px 10px;
+      }
+    
+      .box {
+        max-width: 90%;
+        padding: 15px;
+        top: -15px;
+      }
+    
+      h2 {
+        font-size: 1.6rem;
+      }
+    
+      .experiencedesc {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+    
+      .btn {
         width: 100%;
-        margin-top: 20px; 
-    }
-
-    .listskills, .listlang {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        padding: 0.8rem;
+        font-size: 0.9rem;
+      }
+    
+      .timeline-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .timeline {
+        width: 100%;
+        padding-left: 0;
+      }
+    
+      .timeline::before {
+        left: -5px;
+        top: 75px;
+        height: 70%;
+      }
+    
+      .timeline-item {
+        margin-left: 0;
+        padding: 10px;
+      }
+    
+      .timeline-dot {
+        left: -12px;
+        width: 12px;
+        height: 12px;
+      }
+    
+      .timeline-title {
+        font-size: 1.3rem;
+      }
+    
+      .timeline-description h4,
+      .timeline-content h4 {
+        font-size: 1rem;
+      }
+    
+      .timeline-content p,
+      .timeline-description p {
+        font-size: 0.85rem;
+      }
+    
+      .timeline-institute {
+        font-size: 0.8rem;
+        right: 10px;
+      }
 
     /* projects */
     
