@@ -49,6 +49,19 @@
         font-size: 0.9rem; 
         text-align: center; 
       }
+
+      .details-grid {
+        grid-template-columns: 1fr; 
+        grid-gap: 10px;  
+      }
+    
+      .detail {
+        font-size: 1rem; 
+      }
+    
+      .arrow {
+        font-size: 1rem; 
+      }
     
     /* boxes */
 

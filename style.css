@@ -308,7 +308,7 @@ section {
 }
 
 .detail {
-  font-size: 18px;
+  font-size: 1rem;
   margin: 5px 0;
   display: flex;
   align-items: center; 
@@ -317,7 +317,7 @@ section {
 
 .arrow {
   color: white; 
-  font-size: 20px; 
+  font-size: 1rem; 
   margin-right: 10px;
 }
 /* start boxes */
