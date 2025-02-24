@@ -243,6 +243,7 @@ section {
   }
 }
 
+
 .introductionunderwelcome {
   display: flex;
   color: rgb(169, 165, 165);
@@ -295,6 +296,30 @@ section {
   max-width: 800px;
 }
 
+.details-container {
+  margin-top: 20px;
+  color: white; 
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px; 
+}
+
+.detail {
+  font-size: 18px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center; 
+  color: white;
+}
+
+.arrow {
+  color: white; 
+  font-size: 20px; 
+  margin-right: 10px;
+}
 /* start boxes */
 
 #experience {
