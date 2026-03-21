@@ -3,9 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Updating</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="assets/websitelogo.jpg">
+  <title>Xander's Homepage</title>
 </head>
 <body>
-  
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="themeToggle">
+  <img id=themeIcon src="assets/moon_light.png" alt="theme icon">
+</button>
+  <div class="profile">
+    <h1>Xander <span class="tight">(刘康)</span> Yap</h1>
+    <div class="additionalinfo">
+      <img id="locationIcon" src="assets/location_light.png" alt="location icon">
+      <p class="location-text">Zurich, Switzerland</p>
+      <a href="https://github.com/xandaaaa" target="_blank" rel="noopener noreferrer">
+        <button class="profile-btn">
+          <img id="githubIcon" src="assets/github_dark.png" alt="GitHub" class="btn-icon">
+          GitHub
+        </button>
+      </a>
+
+      <a href="https://www.linkedin.com/in/xanderyap" target="_blank" rel="noopener noreferrer">
+        <button class="profile-btn">
+          <img id="linkedinIcon" src="assets/linkedin_dark.png" alt="LinkedIn" class="btn-icon">
+          LinkedIn
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Page Picker -->
+  <nav class="page-picker">
+  <button class="page-btn active" data-page="home">Home</button>
+  <button class="page-btn" data-page="about">About</button>
+  <button class="page-btn" data-page="projects">Projects</button>
+  <button class="page-btn" data-page="random">Random</button>
+</nav>
+
+  <div class="divider">
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <div class="construction-splash">
+      <div class="construction-emoji">🚧</div>
+      <h2 class="construction-title">Under Construction</h2>
+      <p class="construction-subtitle">Check back soon.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Xander Yap — <a href="mailto:xanderyap1111@gmail.com">xanderyap1111@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
