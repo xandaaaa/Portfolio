@@ -226,43 +226,6 @@ body {
   to { opacity: 1; }
 }
 
-/* Under Construction Splash */
-.construction-splash {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
-  text-align: center;
-  user-select: none;
-}
-
-.construction-emoji {
-  font-size: 5rem;
-  margin-bottom: 16px;
-  animation: sway 2.5s ease-in-out infinite;
-}
-
-@keyframes sway {
-  0%, 100% { transform: rotate(-8deg); }
-  50%       { transform: rotate(8deg); }
-}
-
-.construction-title {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  margin: 0 0 12px 0;
-  color: var(--text-color);
-}
-
-.construction-subtitle {
-  font-size: 1rem;
-  opacity: 0.5;
-  margin: 0;
-  color: var(--text-color);
-}
-
 /* Welcome page */
 .welcome {
   color: var(--text-color);
@@ -594,9 +557,8 @@ ul li:last-child {
 }
 
 .projects-grid-secondary .project-image {
-  width: 320px;
-  height: auto;
-  max-height: 160px;
+  width: 380px;
+  height: 240px;
   border-radius: 8px;
   object-fit: contain;
   margin: 0;
@@ -616,7 +578,6 @@ ul li:last-child {
 .projects-grid-secondary .project-content h3 {
   font-size: 1.3rem;
   margin-bottom: 12px;
-  margin-top: -10px;
   transition: color 0.2s ease;
 }
 
@@ -715,79 +676,68 @@ ul li:last-child {
   opacity: 1;
 }
 
-/* Responsive Styles - Mobile */
-@media (max-width: 760px) {
-
-  /* About section */
-  .about {
-    margin: -8px auto;
-    padding: 0 20px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .page-picker {
+    gap: 8px;
   }
 
-  /* Projects section */
-  .projects {
-    padding: 0 20px;
-  }
-
-  .projects-intro {
-    margin-bottom: 32px;
-  }
-
-  .project-card {
-    padding: 12px;
-    border-radius: 12px;
-  }
-
-  .project-card.highlighted {
-    flex-direction: column;
-    padding: 12px;
-  }
-
-  .project-card.highlighted .project-image {
-    width: 100%;
-    height: 140px;
-  }
-
-  .project-card.highlighted .project-content h3 {
-    margin-top: -16px;
-    text-align: center;
-  }
-
-
-  .project-card.highlighted .project-content p {
-    text-align: center;
-  }
-
-  .project-image {
-    height: 140px;
-    border-radius: 8px;
-  }
-
-  .projects-grid-secondary {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    margin-top: 20px;
+  .page-btn {
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
 
   .projects-grid-secondary .project-card {
     flex-direction: column;
-    gap: 16px;
-    padding: 24px 0;
+    gap: 20px;
+    padding: 32px 0;
   }
 
   .projects-grid-secondary .project-image {
     width: 100%;
-    height: 160px;
+    height: 200px;
   }
 
   .projects-grid-secondary .project-content h3 {
-    margin-bottom: 8px;
-    margin-top: 12px;
+    font-size: 1.15rem;
   }
 
-  .random {
-    padding: 0 20px;
+  .project-card.highlighted {
+    flex-direction: column;
   }
 
+  .project-card.highlighted .project-image {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 16px;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .projects {
+    max-width: 100%;
+  }
+
+  .food {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .char-siu {
+    width: 200px;
+    height: 200px;
+  }
+
+  .food-content p {
+    text-align: center;
+  }
+
+  .additionalinfo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
 }

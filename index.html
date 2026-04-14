@@ -44,12 +44,170 @@
   <div class="divider">
   </div>
 
-  <!-- Page Content -->
+  <!-- Page Content Sections -->
   <div class="page-content">
-    <div class="construction-splash">
-      <div class="construction-emoji">🚧</div>
-      <h2 class="construction-title">Under Construction</h2>
-      <p class="construction-subtitle">Check back soon.</p>
+    <div class="page active" data-page="home">
+      <div class="welcome">
+        <div class="introduction">
+          <h2>Welcome!</h2>
+          <p> While exploring other portfolio websites, I always found myself drawn to the small, random insights people share about their personality - whether it's a blog,
+            interesting facts or other details. So I, too, want to share a few glimpses of my own personality <a href="#random">here</a>, in the hopes that you will find them just as interesting!
+          <br>Of course, the main purpose remains to share my experiences and the projects that I have created along the way. </p>
+        </div>
+
+      <div class="news">
+        <h2>News</h2>
+        <ul>
+          <li> 
+            03. Dec. 2025: Nodes released on the app store!
+            <a href="https://nodes-web.com/#/download" target="_blank" rel="noopener noreferrer">Download the app here</a>.
+          </li>
+          <li>
+          07. Oct. 2025: Nodes open beta released!
+        </li>
+        </ul>
+
+        <!-- Featured Container -->
+        <a href="https://nodes-web.com/" class="featured-container">
+          <img src="assets/nodes.png" alt="Featured" class="featured-image">
+          <div class="featured-content">
+            <h3>Nodes</h3>
+            <p>A smart journaling app for MacOS. Click me to read more.</p>
+          </div>
+        </a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+    <div class="page" data-page="about">
+      <div class="about"> 
+        <h2>A short Introduction</h2>
+        <p>My name is Xander and I am currently pursuing my master's degree in Electrical Engineering and Information Technology at ETH Zurich, 
+          where I am specializing in Machine Learning and Computer Vision. I am mainly interested in 3D reconstruction and scene understanding with
+          the aim to improve robotic perception systems.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-title">MSc. Electrical Engineering</div>
+              <span class="timeline-subtitle">ETH Zurich</span>
+              <span class="timeline-date">Sept. 2025 - Present</span>
+            <div class="timeline-details">Specializing in Machine Learning and Computer Vision.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Research Intern</div>
+              <span class="timeline-subtitle">Tyndall National Institute · Cork, Ireland</span>
+              <span class="timeline-date">Jun. 2025 - Aug. 2025</span>
+            <div class="timeline-details">2D materials stuff.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Working Student</div>
+              <span class="timeline-subtitle">BE Semiconductors · Zug, Switzerland</span>
+              <span class="timeline-date">Mar. 2025 - May. 2025</span>
+            <div class="timeline-details">CVAT stuff.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">Undergraduate Research Assistant</div>
+              <span class="timeline-subtitle">ETH Zurich, Nano-TCAD Group</span>
+              <span class="timeline-date">Sept. 2024 - Mar. 2025</span>
+            <div class="timeline-details">Co-founded Nodes, a smart note-taking app for MacOS.</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-title">BSc. Electrical Engineering</div>
+              <span class="timeline-subtitle">ETH Zurich</span>
+              <span class="timeline-date">Sept. 2022 - Jun. 2025</span>
+            <div class="timeline-details">Bachelor's degree - Whole bunch of stuff.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="page" data-page="projects">
+      <div class="projects">
+        <h2>A Growing Collection...</h2>
+        <p class="projects-intro">These are the finished personal and research projects that I have worked on so far.
+          My main interests are computer vision applications, more specifically scene understanding and 3D reconstruction, where I am currently
+          actively working on projects and hopefully you will see some of them here soon. In the meantime, feel free to explore my previous work
+          and reach out if you would like to collaborate on a project or have any questions.
+        </p>
+        
+        <div class="projects-grid">
+          <!-- Featured Project -->
+          <a href="https://nodes-web.com/" class="project-card highlighted" target="_blank" rel="noopener noreferrer">
+            <span class="highlight-badge">Highlight</span>
+            <img src="assets/nodes.png" alt="Nodes" class="project-image">
+            <div class="project-content">
+              <h3>Nodes</h3>
+              <p class="project-description">Together with two friends from my hometown, we created a journaling app in native swift.
+                Our vision is to provide a minimalistic interface for your thoughts and your thoughts only. However, underneath hides a 
+                powerful data model, that can connect, describe and find your writings, with the aim to ease the exploration of your thoughts and
+                bring up connections that may have been lost in memories. <br> As the time of writing this, we have just released Nodes on the app store,
+                so if you feel inspired, feel free to try it out!
+              </p>
+            </div>
+          </a>
+
+          <!-- Other Projects -->
+          <div class="projects-grid-secondary">
+
+            <a href="https://github.com/xandaaaa/MatSciLLM" class="project-card" target="_blank" rel="noopener noreferrer">
+              <img src="assets/MatscillmSS.png" alt="MatSciLLM" class="project-image">
+              <div class="project-content">
+                <h3>MatSciLLM</h3>
+                <p class="project-description">MatsciLLM is a Retrieval-Augmented-Generation (RAG) system
+                  developed as part of my research internship at Tyndall National Institute. The purpose is to accelerate information extraction
+                from materials science publications, crucially numerical data, that is often scattered in papers but the most important part. This project aims 
+                to provide a clean summary of numerical data of publications by leveraging RAG and local Large Language Models (LLM's). The user can upload several PDF 
+                files and input the information to look for. These are subsequently retrieved with a clean structure along with the corresponding DOI. 
+              </p>
+              </div>
+            </a>
+
+            <a href="https://gitlab.ethz.ch/xanyap/the-role-of-an-external-potential-in-kernel-charge-equilibration" class="project-card" target="_blank" rel="noopener noreferrer">
+              <img src="assets/qpac.png" alt="Kqeq" class="project-image">
+              <div class="project-content">
+                <h3>The Role of an External Potential in Kernel Charge Equilibration</h3>
+                <p class="project-description">Developing novel electronic devices requires in-depth analysis of their material properties. To enable this,
+                  several frameworks exist, one of them is the python package q-pac to predict charge distributions using machine learning techniques.
+                  In this research project at the Nano-TCAD Group at ETH Zurich,
+                  me and a fellow colleague extended the framework to account for long-range external potentials to enable more accurate and realistic analysis.
+                  We specifically analysed the effects on HfO<sub>2</sub>, where we found significant impact on its predicted charge distributions, while also aligning with 
+                  studies from more traditional methods.
+                  </p>
+              </div>
+            </a>
+
+            <a href="https://github.com/xandaaaa" class="project-card" target="_blank" rel="noopener noreferrer">
+              <img src="assets/qpac.png" alt="Project 4" class="project-image">
+              <div class="project-content">
+                <h3>Project Four</h3>
+                <p class="project-description">Another exciting project description. Share what you learned and the impact it had.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" data-page="random" id="random">
+      <div class="random">
+        <h2>Food Picks</h2>
+        <div class="food">
+          <img src="assets/charsiu.jpg" alt="char siu" class="char-siu">
+          <div class="food-content">
+            <h3>Char Siu (叉烧)</h3>
+            <p>Cha siueeee. This is some delicious barbecued pork with a sweet and savory glaze.</p>
+          </div>
+        </div>
+        <h2>Fun Fact</h2>
+        <p>divider same color in dark and white mode.</p>
+      </div>
     </div>
   </div>
 
